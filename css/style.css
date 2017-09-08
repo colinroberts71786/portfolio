@@ -1,5 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 html, body {
-  height: 100%;
+
   width: 100%;
 }
 body {
@@ -12,51 +16,54 @@ img {
   max-width: 100%;
   max-height: 100%;
   width: 100%;
-}
-.content {
-  width: 75%;
-}
-figcaption {
-;
-}
-.header {
-  box-sizing: border-box;
-  display:inline-block;
-  width: 100%;
-  height: 140px;
+  height: auto;
 }
 .container {
     display: flex;
     width: 100%;
     height: 100%;
+    box-sizing: border-box;
 }
-sidebar {
+.sidebar {
   width: 25%;
   height: 100%;
   float: left;
   box-sizing: border-box;
 }
-sidebar img{
+.sidebar img{
   max-width: 75px;
   max-height: 75px;
   position: relative;
 }
-sidebar figure{
+.sidebar figure{
   margin-top: 200px;
   display: block;
   vertical-align: middle;
   align-content: center;
 }
+.content {
+  width: 75%;
+  box-sizing:border-box;
+  float: right;
+}
+.header {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+}
 #bigpicture {
   width: 100%;
+  height: auto;
   margin-top: 1em;
+  box-sizing: border-box;
 }
 .works{
   display: flex;
   width: 100%;
   flex-flow: row;
+  box-sizing: border-box;
+  flex: 1 1 auto;
 }
 .worksfigs{
-  width: 33%
-  background-color: lightgrey;
+  width: 33%;
 }
